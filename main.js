@@ -6,5 +6,4 @@ $(document).ready(function() {
     loopTop: true,
     loopBottom: true
   });
-  console.log('ready')
 });
