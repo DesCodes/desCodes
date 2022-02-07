@@ -1,5 +1,7 @@
+* { box-sizing: border-box;-moz-box-sizing: border-box;}
 body {
 	background-color: #201f23;
+	min-height: 100vh;
 	color: #fff;
 	margin: 0;
 }
@@ -24,8 +26,8 @@ img {
 	object-fit: contain;
 }
 .wrapper {
-	margin: 0 auto;
-	padding: 0 2.5vw;
+	/*margin: 0 auto;*/
+	/*padding: 0 2.5vw;*/
 }
 .grid-2, .grid-3 {
 	display: grid;
@@ -43,6 +45,7 @@ img {
 header {
 	position: relative;
 	overflow: hidden;
+	padding: 0 2.5vw;
 }
 header nav {
 	position: fixed;
@@ -116,8 +119,9 @@ header #menu {
 	top: 50%;
 	transform: translateY(-50%);
 	z-index: 5;
+	display: flex;
+	flex-direction: column;
 }
-
 /*end of header*/
 
 
@@ -127,6 +131,7 @@ section {
 	overflow: hidden;
 	width: 100%;
 	position: relative;
+	padding: 2.5vw;
 }
 
 #section1 {
