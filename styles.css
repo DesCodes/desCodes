@@ -8,11 +8,29 @@ body {
 h1, h2, h3, h4 {
 	font-family: Montserrat;
 }
+h2 {
+	font-size: 2.5vw;
+	line-height: 2.5vw;
+	margin: 0 0 30px;
+}
 h2 span {
 	color: #de5454;
 }
+h3 {
+	font-size: 1.95vw;
+	line-height: 1.95vw;
+}
+h4 {
+	font-size: .8vw;
+	line-height: .8vw;
+	font-weight: 400;
+	text-transform: uppercase;
+}
 p, a {
 	font-family: "Poppins", sans-serif;
+}
+p.title {
+	font-style: italic;
 }
 a {
 	text-decoration: none;
@@ -26,8 +44,8 @@ img {
 	object-fit: contain;
 }
 .wrapper {
-	/*margin: 0 auto;*/
-	/*padding: 0 2.5vw;*/
+	margin: 0 auto;
+	max-width: 1140px;
 }
 .grid-2, .grid-3 {
 	display: grid;
@@ -121,6 +139,22 @@ header #menu {
 	z-index: 5;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+}
+header #menu a {
+	cursor: pointer;
+	width: 10px;
+	height: 10px;
+	position: relative;
+	margin: 15px 0;
+	background: #fff;
+	border-radius: 50%;
+	transition: all .3s;
+}
+header #menu a.active {
+	background: #de5454;
+	width: 14px;
+	height: 14px;
 }
 /*end of header*/
 
@@ -131,7 +165,7 @@ section {
 	overflow: hidden;
 	width: 100%;
 	position: relative;
-	padding: 2.5vw;
+	padding: 12vw 2.5vw 2vw;
 }
 
 #section1 {
@@ -144,4 +178,49 @@ section {
 	height: 100%;
 	width: 100%;
 	margin: auto;
+}
+
+.resumeBox {
+	padding: 50px 60px;
+	background-color: #5f5e60;
+	position: relative;
+}
+.resumeBox:first-child {
+	margin-bottom: 75px;
+}
+.resumeBox:last-child {
+	margin-top: 75px;
+}
+.resumeBox h3 {
+	position: absolute;
+	top: -8.5%;
+}
+
+
+form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 2.5rem;
+}
+form input, form textarea {
+	background-color: #2f2f2f;
+	border: none;
+	padding: 0.75rem 1rem;
+	font-size: 1rem;
+}
+form textarea {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	min-height: 175px;
+}
+form button[type="submit"] {
+	padding: 0.75rem 1rem;
+	grid-row-start: 3;
+	color: #fff;
+	background-color: #de5454;
+	border: none;
+	cursor: pointer;
+	font-size: 1rem;
+	font-family: "Poppins", sans-serif;
+	width: 50%;
 }

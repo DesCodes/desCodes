@@ -1,42 +1,9 @@
-// $(document).ready(function() {
-//   $('#pagepiling').pagepiling({
-//     menu: '#menu',
-//     anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
-//     sectionsColor: ['#bfda00', '#2ebe21', '#2C3E50', '#51bec4'],
-//     loopTop: true,
-//     loopBottom: true
-//   });
-// });
-// new PanelSnap({
-// 	container: document.getElementById('pagepiling'),
-// 	panelSelector: '> section'
-// });
-
-// import PanelSnap from 'panelsnap';
-
-// const instance = new PanelSnap();
-// document.addEventListener("DOMContentLoaded", function() {
-//   new PanelSnap();
-// });
-
-
-// var defaultOptions = {
-//   container: document.getElementById('pagepiling'),
-//   panelSelector: 'section',
-//   directionThreshold: 50,
-//   delay: 0,
-//   duration: 300,
-//   easing: function(t) { return t },
-// };
-
-// new PanelSnap(defaultOptions);
-
-
 document.addEventListener("DOMContentLoaded", function() {
   var options = {
+  	$menu: false,
   	container: document.body,
     panelSelector: 'section',
-    menuSelector: 'button',
+    menuSelector: 'a',
     directionThreshold: 100,
     delay: 2,
     duration: 300,
@@ -44,24 +11,70 @@ document.addEventListener("DOMContentLoaded", function() {
   };
 
  panelSnap = new PanelSnap(options);
-});  
-// side menu scroll page function
-$('#menu button').click(function(e) {
-	console.log($(e.target).attr('data-panel'))
+});
+
+ // side menu scroll page function
+$('#menu a').click(function(e) {
+	// console.log($(e.target).attr('data-panel'))
 	if($(e.target).attr('data-panel') == 'first') {
 		panelSnap.snapToPanel(panelSnap.panelList[0])
+		activePanel()
 	} else if($(e.target).attr('data-panel') == 'second') {
 		panelSnap.snapToPanel(panelSnap.panelList[1])
+		activePanel()
 	} else if($(e.target).attr('data-panel') == 'third') {
 		panelSnap.snapToPanel(panelSnap.panelList[2])
+		activePanel()
 	} else if($(e.target).attr('data-panel') == 'fourth') {
 		panelSnap.snapToPanel(panelSnap.panelList[3])
+		activePanel()
 	} else if($(e.target).attr('data-panel') == 'fifth') {
 		panelSnap.snapToPanel(panelSnap.panelList[4])
+		activePanel()
 	} else if($(e.target).attr('data-panel') == 'sixth') {
 		panelSnap.snapToPanel(panelSnap.panelList[5])
+		activePanel()
 	}
 });
+
+function activePanel() {
+	panelSnap.activePanel
+	if(panelSnap.activePanel == $('#section1')) {
+		$('#menu a').removeClass('active');
+		$('#menu a').eq(0).addClass('active');
+	} else if(panelSnap.activePanel == $('#section2')) {
+		$('#menu a').removeClass('active');
+		$('#menu a').eq(1).addClass('active');
+	} else if(panelSnap.activePanel == $('#section3')) {
+		$('#menu a').removeClass('active');
+		$('#menu a').eq(2).addClass('active');
+	} else if(panelSnap.activePanel == $('#section4')) {
+		$('#menu a').removeClass('active');
+		$('#menu a').eq(3).addClass('active');
+	} else if(panelSnap.activePanel == $('#section5')) {
+		$('#menu a').removeClass('active');
+		$('#menu a').eq(4).addClass('active');
+	} else if(panelSnap.activePanel == $('#section6')) {
+		$('#menu a').removeClass('active');
+		$('#menu a').eq(5).addClass('active');
+	}
+}
+
+
+//  $(window).scroll(function() {
+//  	panelSnap.activePanel;
+// 	if(panelSnap.activePanel = $('#section1')) {
+// 		$('#menu a').removeClass('active');
+// 		$('#menu a').eq(0).addClass('active');
+// 	} else if(panelSnap.activePanel = $('#section2')) {
+// 		$('#menu a').removeClass('active');
+// 		$('#menu a').eq(1).addClass('active');
+// 	}
+	
+// 	});
+// });  
+
+
 
 
 // side menu function
