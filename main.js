@@ -16,24 +16,20 @@
 
 // const instance = new PanelSnap();
 // document.addEventListener("DOMContentLoaded", function() {
-//   new PanelSnap({
-//   	container: document.getElementById('pagepiling')
-//   });
+//   new PanelSnap();
 // });
 
-document.addEventListener("DOMContentLoaded", function() {
-  new PanelSnap();
-});
+
 var defaultOptions = {
   container: document.getElementById('pagepiling'),
-  panelSelector: '> section',
+  panelSelector: 'section',
   directionThreshold: 50,
   delay: 0,
   duration: 300,
   easing: function(t) { return t },
 };
 
-new PanelSnap(options);
+new PanelSnap(defaultOptions);
 // jQuery(function () {
 //   new PanelSnap();
 // })
