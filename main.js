@@ -12,9 +12,15 @@
 // 	panelSelector: '> section'
 // });
 
-// import PanelSnap from 'panelsnap';
+import PanelSnap from 'panelsnap';
 
-// const instance = new PanelSnap();
+const instance = new PanelSnap();
 document.addEventListener("DOMContentLoaded", function() {
-  new PanelSnap();
+  new PanelSnap({
+  	container: document.getElementById('pagepiling')
+  });
 });
+
+// jQuery(function () {
+//   new PanelSnap();
+// })
