@@ -7,7 +7,14 @@
 //     loopBottom: true
 //   });
 // });
-new PanelSnap({
-	container: document.getElementById('pagepiling'),
-	panelSelector: '> section'
+// new PanelSnap({
+// 	container: document.getElementById('pagepiling'),
+// 	panelSelector: '> section'
+// });
+
+// import PanelSnap from 'panelsnap';
+
+// const instance = new PanelSnap();
+document.addEventListener("DOMContentLoaded", function() {
+  new PanelSnap();
 });
