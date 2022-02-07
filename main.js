@@ -43,3 +43,11 @@
 
 //   new PanelSnap(options);
 // });  
+
+// side menu function
+$('nav .rightBox svg').click(function() {
+	$('nav.sideMenu').addClass('active');
+});
+$('nav.sideMenu svg').click(function() {
+	$('nav.sideMenu').removeClass('active');
+});
