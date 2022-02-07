@@ -20,16 +20,26 @@
 // });
 
 
-var defaultOptions = {
-  container: document.getElementById('pagepiling'),
-  panelSelector: 'section',
-  directionThreshold: 50,
-  delay: 0,
-  duration: 300,
-  easing: function(t) { return t },
-};
+// var defaultOptions = {
+//   container: document.getElementById('pagepiling'),
+//   panelSelector: 'section',
+//   directionThreshold: 50,
+//   delay: 0,
+//   duration: 300,
+//   easing: function(t) { return t },
+// };
 
-new PanelSnap(defaultOptions);
-// jQuery(function () {
-//   new PanelSnap();
-// })
+// new PanelSnap(defaultOptions);
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var options = {
+    container: document.getElementById('pagepiling'),
+    panelSelector: '.section',
+    directionThreshold: 100,
+    delay: 0,
+    duration: 300,
+  };
+
+  new PanelSnap(options);
+});  
