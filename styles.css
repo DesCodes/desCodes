@@ -1,6 +1,42 @@
+body {
+	background-color: #151515;
+	color: #fff;
+}
+h1, h2, h3, h4 {
+	font-family: Monserrat;
+}
+p, a {
+	font-family: "Poppins", sans-serif;
+}
+a {
+	text-decoration: none;
+	color: unset;
+}
+img {
+	width: 100%;
+	object-fit: contain;
+}
+.wrapper {
+	margin: 0 auto;
+	padding: 0 2.5vw;
+}
 section {
 	min-height: 100vh;
 	overflow: hidden;
 	width: 100%;
 	position: relative;
 }
+
+/*header*/
+header {
+	position: relative;
+	overflow: hidden;
+}
+header nav {
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 2.5vw 0;
+}
+/*end of header*/
