@@ -1,5 +1,5 @@
 body {
-	background-color: #151515;
+	background-color: #201f23;
 	color: #fff;
 	margin: 0;
 }
@@ -12,6 +12,9 @@ p, a {
 a {
 	text-decoration: none;
 	color: unset;
+}
+li {
+	list-style: none;
 }
 img {
 	width: 100%;
@@ -41,7 +44,19 @@ header nav.top {
 header nav .leftBox {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	width: 30%;
+}
+header nav .leftBox .logo {
+	font-size: 27px;
+	padding: 5px;
+}
+header nav .leftBox .logo span {
+	color: #de5454;
+}
+header nav .leftBox .logo:hover {
+	color: #de5454;
+	text-transform: lowercase;
 }
 header nav .rightBox {
 	display: flex;
@@ -55,7 +70,7 @@ header nav .rightBox svg {
 header nav.sideMenu {
 	top: 0;
 	right: -1000px;
-	background-color: #272727;
+	background-color: #414141;
 	padding: 2.5vw;
 	z-index: 10;
 	transition: all .5s;
@@ -82,11 +97,33 @@ header .sideMenu li a {
 	display: block;
 	padding: 15px 0;
 }
+header #menu {
+	position: fixed;
+	right: 2.5vw;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 5;
+}
+
 /*end of header*/
+
+
 
 section {
 	min-height: 100vh;
 	overflow: hidden;
 	width: 100%;
 	position: relative;
+}
+
+#section1 {
+	display: flex;
+}
+#section1 .introText {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	margin: auto;
 }
