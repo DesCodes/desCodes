@@ -1,6 +1,7 @@
 body {
 	background-color: #151515;
 	color: #fff;
+	margin: 0;
 }
 h1, h2, h3, h4 {
 	font-family: Monserrat;
@@ -34,9 +35,55 @@ header {
 }
 header nav {
 	position: fixed;
+	z-index: 5;
+}
+header nav.top {
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
 	padding: 2.5vw 0;
+}
+header nav .leftBox {
+	display: flex;
+	justify-content: space-between;
+	width: 30%;
+}
+header nav .rightBox {
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 2.5vw;
+	padding-right: 2.5vw;
+}
+header nav .rightBox svg {
+	cursor: pointer;
+}
+header nav.sideMenu {
+	top: 0;
+	right: -1000px;
+	background-color: #272727;
+	padding: 2.5vw;
+	z-index: 10;
+}
+header nav.sideMenu.active {
+	right: 0;
+}
+header .sideMenu .closeBox {
+	position: relative;
+}
+header .closeBox svg {
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+}
+header .sideMenu ul {
+	padding: 7em 5em;
+}
+header .sideMenu li {
+	list-style: none;
+}
+header .sideMenu li a {
+	display: block;
+	padding: 15px 0;
 }
 /*end of header*/
