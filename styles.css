@@ -4,7 +4,10 @@ body {
 	margin: 0;
 }
 h1, h2, h3, h4 {
-	font-family: Monserrat;
+	font-family: Montserrat;
+}
+h2 span {
+	color: #de5454;
 }
 p, a {
 	font-family: "Poppins", sans-serif;
@@ -23,6 +26,16 @@ img {
 .wrapper {
 	margin: 0 auto;
 	padding: 0 2.5vw;
+}
+.grid-2, .grid-3 {
+	display: grid;
+	grid-gap: 30px;
+}
+.grid-2 {
+	grid-template-columns: repeat(2,1fr);
+}
+.grid-3 {
+	grid-template-columns: repeat(3,1fr);
 }
 
 
@@ -49,7 +62,7 @@ header nav .leftBox {
 }
 header nav .leftBox .logo {
 	font-size: 27px;
-	padding: 5px;
+	padding: 5px 5px 5px 0;
 }
 header nav .leftBox .logo span {
 	color: #de5454;
