@@ -36,52 +36,33 @@ document.addEventListener("DOMContentLoaded", function() {
   var options = {
   	container: document.body,
     panelSelector: 'section',
+    menuSelector: 'button',
     directionThreshold: 100,
     delay: 2,
     duration: 300,
     easing: function(t) { return t }
   };
 
-new PanelSnap(options);
+ panelSnap = new PanelSnap(options);
 });  
+// side menu scroll page function
+$('#menu button').click(function(e) {
+	console.log($(e.target).attr('data-panel'))
+	if($(e.target).attr('data-panel') == 'first') {
+		panelSnap.snapToPanel(panelSnap.panelList[0])
+	} else if($(e.target).attr('data-panel') == 'second') {
+		panelSnap.snapToPanel(panelSnap.panelList[1])
+	} else if($(e.target).attr('data-panel') == 'third') {
+		panelSnap.snapToPanel(panelSnap.panelList[2])
+	} else if($(e.target).attr('data-panel') == 'fourth') {
+		panelSnap.snapToPanel(panelSnap.panelList[3])
+	} else if($(e.target).attr('data-panel') == 'fifth') {
+		panelSnap.snapToPanel(panelSnap.panelList[4])
+	} else if($(e.target).attr('data-panel') == 'sixth') {
+		panelSnap.snapToPanel(panelSnap.panelList[5])
+	}
+});
 
-// var menu, menuItems, panelSnapInstance;
-
-// document.addEventListener("DOMContentLoaded", function () {
-// menu = document.querySelector('#menu');
-// menuItems = menu.querySelectorAll('button');
-
-// panelSnapInstance = new PanelSnap({
-//   panelSelector: "section",
-//   strictContainerSelection: "false",
-//   directionThreshold: 100,
-//   delay: 2,
-//   duration: 300,
-//   easing: function(t) { return t }
-// });
-// panelSnapInstance.on('activatePanel', activateMenuItem);
-
-// menuItems.forEach(function (menuItem) {
-//   menuItem.addEventListener('click', onButtonClick);
-// })
-
-// });
-
-// function activateMenuItem(panel) {
-// menuItems.forEach(function (menuItem) {
-//   menuItem.classList.remove('active');
-// });
-
-// var panelName = panel.getAttribute('data-panel')
-// var menuItem = menu.querySelector('button[data-panel="' + panelName + '"]');
-// menuItem.classList.add('active');
-// }
-
-// function onButtonClick(e) {
-// var panelName = e.target.getAttribute('data-panel')
-// var panel = document.querySelector('section[data-panel="' + panelName + '"]');
-// panelSnapInstance.snapToPanel(panel);
-// }
 
 // side menu function
 $('nav .rightBox svg').click(function() {
