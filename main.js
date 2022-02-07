@@ -32,14 +32,14 @@
 // new PanelSnap(defaultOptions);
 
 
-document.addEventListener("DOMContentLoaded", function() {
-  var options = {
-    container: document.getElementById('pagepiling'),
-    panelSelector: '.section',
-    directionThreshold: 100,
-    delay: 0,
-    duration: 300,
-  };
+// document.addEventListener("DOMContentLoaded", function() {
+//   var options = {
+//     container: document.getElementById('pagepiling'),
+//     panelSelector: '.section',
+//     directionThreshold: 100,
+//     delay: 0,
+//     duration: 300,
+//   };
 
-  new PanelSnap(options);
-});  
+//   new PanelSnap(options);
+// });  

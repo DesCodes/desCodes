@@ -4,7 +4,20 @@
 	<!-- <link rel="stylesheet" href="pagePiling.js-master/jquery.pagepiling.css" /> -->
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 	<!-- <script src="pagePiling.js-master/jquery.pagepiling.min.js"></script> -->
-	<script src="node_modules/panelsnap/docs/panelsnap.js"></script>
+	<script src="node_modules/panelsnap/docs/panelsnap.js" defer></script>
+  <script>
+   document.addEventListener("DOMContentLoaded", function() {
+	  var options = {
+	    container: document.getElementById('pagepiling'),
+	    panelSelector: '.section',
+	    directionThreshold: 100,
+	    delay: 0,
+	    duration: 300,
+	  };
+
+  new PanelSnap(options);
+	});  
+  </script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins&display=swap" rel="stylesheet">
