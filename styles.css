@@ -197,6 +197,78 @@ section {
 }
 
 
+#section4 .wrapper {
+	margin: 0;
+	margin-left: auto;
+}
+#section4 .grid-3 {
+	margin-top: 150px;
+}
+#section4 .outerBox {
+	max-width: 100px;
+	position: relative;
+}
+#section4 .outerBox .progressBar {
+	width: 200px; /* Set the size of the progress bar */
+	height: 200px;
+	position: absolute;
+	clip: rect(0px,200px,200px,100px); /* Hide half of the progress bar */
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+/* Set the sizes of the elements that make up the progress bar */
+#section4 .progressBar .circle {
+	width: 180px;
+	height: 180px;
+	border: 10px solid green;
+	border-radius: 50%;
+	position: absolute;
+	clip: rect(0px,100px,200px,0px);
+}
+div[data-anim~=base] {
+  -webkit-animation-iteration-count: 1;  /* Only run once */
+  -webkit-animation-fill-mode: forwards; /* Hold the last keyframe */
+  -webkit-animation-timing-function:linear; /* Linear animation */
+}
+.progressBar[data-anim~=wrapper] {
+  -webkit-animation-duration: 0.01s; /* Complete keyframes asap */
+  -webkit-animation-delay: 1s; /* Wait half of the animation */
+  -webkit-animation-name: close-wrapper; /* Keyframes name */
+}
+.circle[data-anim~=left] {
+  -webkit-animation-duration: 2s; /* Full animation time */
+  -webkit-animation-name: left-spin;
+}
+
+.circle[data-anim~=right] {
+  -webkit-animation-duration: 1s; /* Half animation time */
+  -webkit-animation-name: right-spin;
+}
+@-webkit-keyframes right-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(180deg);
+  }
+}
+/* Rotate the left side of the progress bar from 0 to 360 degrees */
+@-webkit-keyframes left-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+/* Set the wrapper clip to auto, effectively removing the clip */
+@-webkit-keyframes close-wrapper {
+  to {
+    clip: rect(auto, auto, auto, auto);
+  }
+}
+
 form {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
