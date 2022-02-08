@@ -5,7 +5,7 @@ body {
 	color: #fff;
 	margin: 0;
 }
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
 	font-family: Montserrat;
 }
 h2 {
@@ -20,11 +20,13 @@ h3 {
 	font-size: 1.95vw;
 	line-height: 1.95vw;
 }
-h4 {
+h4, h5 {
 	font-size: .8vw;
 	line-height: .8vw;
-	font-weight: 400;
 	text-transform: uppercase;
+}
+h5 {
+	font-weight: 400;
 }
 p, a {
 	font-family: "Poppins", sans-serif;
@@ -180,6 +182,19 @@ section {
 	margin: auto;
 }
 
+
+.iconBox {
+	margin-top: 5vw;
+}
+.iconBox svg {
+	width: 100%;
+	height: 100%;
+	max-width: 70px;
+	object-fit: contain;
+	color: #de5454;
+}
+
+
 .resumeBox {
 	padding: 50px 60px;
 	background-color: #5f5e60;
@@ -193,7 +208,11 @@ section {
 }
 .resumeBox h3 {
 	position: absolute;
-	top: -8.5%;
+	top: -3.5%;
+	margin: 0;
+}
+.resumeBox p {
+	font-size: 14px;
 }
 
 
@@ -207,66 +226,6 @@ section {
 #section4 .outerBox {
 	max-width: 100px;
 	position: relative;
-}
-#section4 .outerBox .progressBar {
-	width: 200px; /* Set the size of the progress bar */
-	height: 200px;
-	position: absolute;
-	clip: rect(0px,200px,200px,100px); /* Hide half of the progress bar */
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-}
-/* Set the sizes of the elements that make up the progress bar */
-#section4 .progressBar .circle {
-	width: 180px;
-	height: 180px;
-	border: 10px solid green;
-	border-radius: 50%;
-	position: absolute;
-	clip: rect(0px,100px,200px,0px);
-}
-div[data-anim~=base] {
-  -webkit-animation-iteration-count: 1;  /* Only run once */
-  -webkit-animation-fill-mode: forwards; /* Hold the last keyframe */
-  -webkit-animation-timing-function:linear; /* Linear animation */
-}
-.progressBar[data-anim~=wrapper] {
-  -webkit-animation-duration: 0.01s; /* Complete keyframes asap */
-  -webkit-animation-delay: 1s; /* Wait half of the animation */
-  -webkit-animation-name: close-wrapper; /* Keyframes name */
-}
-.circle[data-anim~=left] {
-  -webkit-animation-duration: 2s; /* Full animation time */
-  -webkit-animation-name: left-spin;
-}
-
-.circle[data-anim~=right] {
-  -webkit-animation-duration: 1s; /* Half animation time */
-  -webkit-animation-name: right-spin;
-}
-@-webkit-keyframes right-spin {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(180deg);
-  }
-}
-/* Rotate the left side of the progress bar from 0 to 360 degrees */
-@-webkit-keyframes left-spin {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-  }
-}
-/* Set the wrapper clip to auto, effectively removing the clip */
-@-webkit-keyframes close-wrapper {
-  to {
-    clip: rect(auto, auto, auto, auto);
-  }
 }
 
 form {
