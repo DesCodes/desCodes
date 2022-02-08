@@ -30,6 +30,8 @@ h4 {
 }
 h5 {
 	font-weight: 400;
+	margin: 15px 0 5px;
+	line-height: 20px;
 }
 p, a {
 	font-family: "Poppins", sans-serif;
@@ -263,6 +265,19 @@ section {
 }
 .resumeBox p {
 	font-size: 14px;
+	line-height: 22px;
+}
+.resumeBox p.title, .resumeBox p.date {
+	margin: 0;
+}
+.resumeBox a {
+	text-transform: lowercase;
+	text-decoration: underline;
+	font-size: 14px;
+	color: #ccc;
+}
+.resumeBox a:hover {
+	color: #de5454;
 }
 .resumeBox hr {
 	width: 100%;
@@ -304,6 +319,25 @@ section {
 }
 .jquery-icon {
 	color: #0769ad;
+}
+
+
+#section5 .kosmosia:hover #section5 {
+	background-image: url(assets/kosmosia.jpg);
+	background-size: cover;
+	background-position: center;
+  background-color: #000000a8;
+	background-blend-mode: darken;
+}
+#section5 h3 {
+	margin-bottom: 0;
+}
+#section5 .innerBox div {
+	padding-bottom: 15px;
+	color: #ababab;
+}
+#section5 .innerBox div:hover {
+	color: #fff;
 }
 
 
