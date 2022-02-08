@@ -38,28 +38,29 @@ $('#menu a').click(function(e) {
 });
 
 function activePanel() {
-	panelSnap.activePanel
-	if(panelSnap.activePanel == $('#section1')) {
+	if($(panelSnap.activePanel).attr('data-panel') == $('#menu a').eq(0).attr('data-panel')) {
 		$('#menu a').removeClass('active');
 		$('#menu a').eq(0).addClass('active');
-	} else if(panelSnap.activePanel == $('#section2')) {
+	} else if($(panelSnap.activePanel).attr('data-panel') == $('#menu a').eq(1).attr('data-panel')) {
 		$('#menu a').removeClass('active');
 		$('#menu a').eq(1).addClass('active');
-	} else if(panelSnap.activePanel == $('#section3')) {
+	} else if($(panelSnap.activePanel).attr('data-panel') == $('#menu a').eq(2).attr('data-panel')) {
 		$('#menu a').removeClass('active');
 		$('#menu a').eq(2).addClass('active');
-	} else if(panelSnap.activePanel == $('#section4')) {
+	} else if($(panelSnap.activePanel).attr('data-panel') == $('#menu a').eq(3).attr('data-panel')) {
 		$('#menu a').removeClass('active');
 		$('#menu a').eq(3).addClass('active');
-	} else if(panelSnap.activePanel == $('#section5')) {
+	} else if($(panelSnap.activePanel).attr('data-panel') == $('#menu a').eq(4).attr('data-panel')) {
 		$('#menu a').removeClass('active');
 		$('#menu a').eq(4).addClass('active');
-	} else if(panelSnap.activePanel == $('#section6')) {
+	} else if($(panelSnap.activePanel).attr('data-panel') == $('#menu a').eq(5).attr('data-panel')) {
 		$('#menu a').removeClass('active');
 		$('#menu a').eq(5).addClass('active');
 	}
 }
-
+$(window).scroll(function() {
+	activePanel();
+});
 
 //  $(window).scroll(function() {
 //  	panelSnap.activePanel;
