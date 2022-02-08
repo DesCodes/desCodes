@@ -62,18 +62,6 @@ $(window).scroll(function() {
 	activePanel();
 });
 
-//  $(window).scroll(function() {
-//  	panelSnap.activePanel;
-// 	if(panelSnap.activePanel = $('#section1')) {
-// 		$('#menu a').removeClass('active');
-// 		$('#menu a').eq(0).addClass('active');
-// 	} else if(panelSnap.activePanel = $('#section2')) {
-// 		$('#menu a').removeClass('active');
-// 		$('#menu a').eq(1).addClass('active');
-// 	}
-	
-// 	});
-// });  
 
 
 
