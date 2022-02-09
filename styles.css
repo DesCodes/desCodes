@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5 {
 h2 {
 	font-size: 2.5vw;
 	line-height: 2.5vw;
-	margin: 0 0 30px;
+	margin: 0 0 35px;
 }
 h2 span {
 	color: #de5454;
@@ -273,6 +273,7 @@ section {
 .resumeBox p {
 	font-size: 14px;
 	line-height: 22px;
+	padding-left: 10px;
 }
 .resumeBox p.title, .resumeBox p.date {
 	margin: 0;
@@ -373,4 +374,16 @@ form button[type="submit"] {
 }
 form button[type="submit"]:hover {
 	background-color: #e86262;
+}
+#section6 .iconBox {
+	display: flex;
+}
+#section6 .iconBox a {
+	width: 15%;
+}
+#section6 .iconBox a:hover svg {
+	color: #fff;
+}
+#section6 .iconBox svg {
+	color: #9b9b9b;
 }
