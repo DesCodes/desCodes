@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
   	container: document.body,
     panelSelector: 'section',
     menuSelector: 'a',
-    directionThreshold: 100,
-    delay: 2,
+    directionThreshold: 50,
+    delay: 0,
     duration: 300,
     easing: function(t) { return t }
   };
