@@ -300,7 +300,7 @@ header #menu {
 	align-items: center;
 }
 header #menu a {
-	cursor: pointer;
+	/*cursor: pointer;*/
 	width: 10px;
 	height: 10px;
 	position: relative;
