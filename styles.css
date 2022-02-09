@@ -80,14 +80,9 @@ h3 {
 	}
 }
 h4, h5 {
-	font-size: .8vw;
-	line-height: .8vw;
+	font-size: 1.2vw;
+	line-height: 1.2vw;
 	text-transform: uppercase;
-}@media screen and (max-width: 1440px) {
-	h4, h5 {
-		font-size: 1.2vw;
-		line-height: 1.2vw;
-	}
 }@media screen and (max-width: 1024px) {
 	h4, h5 {
 		font-size: 1.8vw;
@@ -406,7 +401,7 @@ section {
 }
 .resumeBox {
 	padding: 50px 60px;
-	background-color: #5f5e6073;
+	background-color: #5f5e60ad;
 	position: relative;
 	transition: all .3s;
 }@media screen and (max-width: 500px) {
@@ -417,12 +412,12 @@ section {
 .resumeBox:hover {
 	background-color: #5f5e60;
 }
-.resumeBox .innerBox {
+/*.resumeBox .innerBox {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	height: 100%;
-}
+}*/
 .resumeBox:first-child {
 	margin-bottom: 75px;
 }@media screen and (max-width: 768px) {
@@ -433,11 +428,26 @@ section {
 .resumeBox:last-child {
 	margin-top: 75px;
 }
+.resumeBox h5 {
+	letter-spacing: 1.5px;
+}
 .resumeBox h3 {
 	position: absolute;
 	top: -3.5%;
 	margin: 0;
 }
+/*.resumeBox .innerBox:first-child .textBox {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: space-between;
+}*/
+/*.resumeBox .box {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 100%;
+}*/
 .resumeBox p {
 	font-size: 14px;
 	line-height: 22px;
