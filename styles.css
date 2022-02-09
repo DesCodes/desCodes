@@ -98,6 +98,11 @@ h4, h5 {
 		font-size: 2.5vw;
 		line-height: 2.5vw;
 	}
+}@media screen and (max-width: 500px) {
+	h4, h5 {
+		font-size: 3.5vw;
+		line-height: 3.5vw;
+	}
 }
 h4 {
 	margin: 35px 0;
@@ -373,6 +378,10 @@ section {
 		align-items: center;
 		text-align: center;
 	}
+}@media screen and (max-width: 500px) {
+	#section2 .textBox {
+		max-width: 75%;
+	}
 }
 
 .iconBox {
@@ -400,6 +409,10 @@ section {
 	background-color: #5f5e6073;
 	position: relative;
 	transition: all .3s;
+}@media screen and (max-width: 500px) {
+	.resumeBox {
+		padding: 40px 30px;
+	}
 }
 .resumeBox:hover {
 	background-color: #5f5e60;
