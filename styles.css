@@ -296,6 +296,14 @@ section {
 #section1 h1 span {
 	color: #de5454;
 }
+#section1 .waving {
+	display: inline-block;
+	animation: waving .5s infinite alternate;
+}
+@keyframes waving {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(25deg);}
+}
 
 
 #section2 p {
