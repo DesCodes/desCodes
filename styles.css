@@ -63,6 +63,11 @@ h3 {
 		font-size: 2.5vw;
 		line-height: 2.5vw;
 	}
+}@media screen and (max-width: 768px) {
+	h3 {
+		font-size: 4.5vw;
+		line-height: 4.5vw;
+	}
 }@media screen and (max-width: 650px) {
 	h3 {
 		font-size: 5.5vw;
@@ -175,6 +180,24 @@ header nav .leftBox {
 	justify-content: space-between;
 	align-items: center;
 	width: 30%;
+}@media screen and (max-width: 1440px) {
+	header nav .leftBox {
+		width: 40%;
+	}
+}@media screen and (max-width: 1024px) {
+	header nav .leftBox {
+		width: 45%;
+	}
+}@media screen and (max-width: 768px) {
+	header nav .leftBox .emailLink {
+		position: fixed;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}@media screen and (max-width: 600px) {
+	header nav .leftBox .emailLink {
+		display: none;
+	}
 }
 header nav .leftBox .logo {
 	font-size: 27px;
@@ -299,6 +322,14 @@ section {
 	width: 100%;
 	position: relative;
 	padding: 12vw 2.5vw 2vw;
+}@media screen and (max-width: 1024px) {
+	section {
+		padding: 14vw 2.5vw 2vw;
+	}
+}@media screen and (max-width: 600px) {
+	section {
+		padding: 18vw 2.5vw 2vw;
+	}
 }
 
 #section1 {
@@ -478,6 +509,10 @@ section {
 #section5 .innerBox div.active {
 	color: #fff;
 	padding-left: 5px;
+}@media screen and (max-width: 768px) {
+	#section5 .innerBox {
+		margin-top: 7vw;
+	}
 }
 
 
@@ -519,11 +554,12 @@ form button[type="submit"] {
 	border: none;
 	cursor: pointer;
 	font-size: 1rem;
-	width: 50%;
+	width: 75%;
 	transition: all .3s;
 }@media screen and (max-width: 600px) {
 	form button[type="submit"] {
 		grid-row-start: 4;
+		width: 50%;
 	} 
 }
 form button[type="submit"]:hover {
