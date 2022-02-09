@@ -41,7 +41,7 @@ h2 {
 	font-size: 2.5vw;
 	line-height: 2.5vw;
 	margin: 0 0 35px;
-}@media screen and (max-height: 1440px) {
+}@media screen and (max-width: 1440px) {
 	h2 {
 		font-size: 2.75vw;
 		line-height: 2.75vw;
@@ -78,7 +78,7 @@ h4, h5 {
 	font-size: .8vw;
 	line-height: .8vw;
 	text-transform: uppercase;
-}@media screen and (max-height: 1440px) {
+}@media screen and (max-width: 1440px) {
 	h4, h5 {
 		font-size: 1.2vw;
 		line-height: 1.2vw;
@@ -429,7 +429,7 @@ section {
 	margin: 0;
 	margin-left: auto;
 	max-width: 950px;
-}@media screen and (max-height: 1024px) {
+}@media screen and (max-width: 1024px) {
 	#section4 .wrapper {
 		margin: 0;
 	}
