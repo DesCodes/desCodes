@@ -73,3 +73,38 @@ $('nav .rightBox svg').click(function() {
 $('nav.sideMenu svg').click(function() {
 	$('nav.sideMenu').removeClass('active');
 });
+
+// section5 background mouse over function
+$('.kosmosia').mouseover(function() {
+	$('#section5 .innerBox div').removeClass('active');
+	$(this).addClass('active');
+	$('#section5').css({
+		'background-image': 'url(assets/kosmosia.jpg)',
+		'background-size': 'cover',
+		'background-position': 'center',
+	  'background-color': 'rgb(0 0 0 / 85%)',
+		'background-blend-mode': 'darken'
+	});
+});
+$('.restaurant').mouseover(function() {
+	$('#section5 .innerBox div').removeClass('active');
+	$(this).addClass('active');
+	$('#section5').css({
+		'background-image': 'url(assets/restaurant.jpg)',
+		'background-size': 'cover',
+		'background-position': 'center',
+	  'background-color': 'rgb(0 0 0 / 85%)',
+		'background-blend-mode': 'darken'
+	});
+});
+$('.treadmillFactory').mouseover(function() {
+	$('#section5 .innerBox div').removeClass('active');
+	$(this).addClass('active');
+	$('#section5').css({
+		'background-image': 'url(assets/treadmillFactory.jpg)',
+		'background-size': 'cover',
+		'background-position': 'center',
+	  'background-color': 'rgb(0 0 0 / 85%)',
+		'background-blend-mode': 'darken'
+	});
+});

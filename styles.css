@@ -33,7 +33,7 @@ h5 {
 	margin: 15px 0 5px;
 	line-height: 20px;
 }
-p, a {
+p, a, form input, form textarea, form button {
 	font-family: "Poppins", sans-serif;
 }
 p.title {
@@ -42,6 +42,13 @@ p.title {
 a {
 	text-decoration: none;
 	color: unset;
+}
+a[href="mailto:desmond.yan.lai@gmail.com"] {
+	transition: all .3s;
+}
+a[href="mailto:desmond.yan.lai@gmail.com"]:hover {
+	/*color: #de5454;*/
+	border-bottom: 1px solid #de5454;
 }
 li {
 	list-style: none;
@@ -322,22 +329,17 @@ section {
 }
 
 
-#section5 .kosmosia:hover #section5 {
-	background-image: url(assets/kosmosia.jpg);
-	background-size: cover;
-	background-position: center;
-  background-color: #000000a8;
-	background-blend-mode: darken;
-}
 #section5 h3 {
-	margin-bottom: 0;
+	margin: 0;
 }
 #section5 .innerBox div {
-	padding-bottom: 15px;
+	margin-bottom: 50px;
 	color: #ababab;
+	transition: all .3s;
 }
-#section5 .innerBox div:hover {
+#section5 .innerBox div.active {
 	color: #fff;
+	padding-left: 5px;
 }
 
 
@@ -351,6 +353,7 @@ form input, form textarea {
 	border: none;
 	padding: 0.75rem 1rem;
 	font-size: 1rem;
+	color: #d4d4d4;
 }
 form textarea {
 	grid-column-start: 1;
@@ -365,6 +368,9 @@ form button[type="submit"] {
 	border: none;
 	cursor: pointer;
 	font-size: 1rem;
-	font-family: "Poppins", sans-serif;
 	width: 50%;
+	transition: all .3s;
+}
+form button[type="submit"]:hover {
+	background-color: #e86262;
 }
