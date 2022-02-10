@@ -108,7 +108,7 @@ $('.kosmosia').mouseover(function() {
 	$('#section5 .innerBox div').removeClass('active');
 	$(this).addClass('active');
 	$('#section5').css({
-		'background-image': 'url(assets/kosmosia.jpg)',
+		'background-image': 'url(assets/kosmosia.webp)',
 		'background-size': 'cover',
 		'background-position': 'center',
 	  'background-color': 'rgb(0 0 0 / 85%)',
@@ -119,7 +119,7 @@ $('.restaurant').mouseover(function() {
 	$('#section5 .innerBox div').removeClass('active');
 	$(this).addClass('active');
 	$('#section5').css({
-		'background-image': 'url(assets/restaurant.jpg)',
+		'background-image': 'url(assets/restaurant.webp)',
 		'background-size': 'cover',
 		'background-position': 'center',
 	  'background-color': 'rgb(0 0 0 / 85%)',
@@ -130,7 +130,7 @@ $('.treadmillFactory').mouseover(function() {
 	$('#section5 .innerBox div').removeClass('active');
 	$(this).addClass('active');
 	$('#section5').css({
-		'background-image': 'url(assets/treadmillFactory.jpg)',
+		'background-image': 'url(assets/treadmillFactory.webp)',
 		'background-size': 'cover',
 		'background-position': 'center',
 	  'background-color': 'rgb(0 0 0 / 85%)',

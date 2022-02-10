@@ -420,7 +420,7 @@ section {
 
 
 #section3 {
-	background-image: url(assets/desktop-background.jpg);
+	background-image: url(assets/desktop-background.webp);
 	background-size: cover;
 	background-position: center;
 	background-color: #00000094;
@@ -510,7 +510,7 @@ section {
 }
 
 #section4 {
-	background-image: url(assets/wave-geometric-background.jpg);
+	background-image: url(assets/wave-geometric-background.webp);
 	background-size: cover;
 	background-position: center;
 	background-color: #00000094;
