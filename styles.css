@@ -2,6 +2,7 @@
 body {
 	background-color: #201f23;
 	min-height: 100vh;
+	min-width: 320px;
 	color: #fff;
 	margin: 0;
 }
@@ -82,6 +83,11 @@ h3 {
 	h3 {
 		font-size: 7.5vw;
 		line-height: 7.5vw;
+	}
+}@media screen and (max-width: 400px) {
+	h3 {
+		font-size: 9.5vw;
+		line-height: 9.5vw;
 	}
 }
 h4 {
@@ -429,6 +435,11 @@ section {
 	.resumeBox {
 		padding: 40px 30px;
 	}
+}@media screen and (max-width: 375px) {
+	.resumeBox {
+		max-width: 280px;
+		margin: auto;
+	}
 }
 .resumeBox:hover {
 	background-color: #5f5e60;
@@ -451,11 +462,16 @@ section {
 }
 .resumeBox h5 {
 	letter-spacing: 1.5px;
+	word-break: break-word;
 }
 .resumeBox h3 {
 	position: absolute;
 	top: -3.5%;
 	margin: 0;
+}@media screen and (max-width: 375px) {
+	.resumeBox h3 {
+		top: -1.5%;
+	}
 }
 /*.resumeBox .innerBox:first-child .textBox {
 	display: flex;
