@@ -51,6 +51,11 @@ h2 {
 		font-size: 4.75vw;
 		line-height: 3.75vw;
 	}
+}@media screen and (max-width: 500px) {
+	h2 {
+		font-size: 5.75vw;
+		line-height: 4.75vw;
+	}
 }
 h2 span {
 	color: #de5454;
