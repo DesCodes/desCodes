@@ -491,7 +491,7 @@ section {
 	padding-left: 10px;
 }
 .resumeBox li {
-	list-style-type: disc;
+	list-style-type: disclosure-closed;
 }
 .resumeBox p.title, .resumeBox p.date {
 	margin: 0;
