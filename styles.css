@@ -79,37 +79,53 @@ h3 {
 		line-height: 7.5vw;
 	}
 }
-h4, h5 {
+h4 {
 	font-size: 1.2vw;
 	line-height: 1.2vw;
 	text-transform: uppercase;
+	margin: 35px 0;
 }@media screen and (max-width: 1024px) {
-	h4, h5 {
+	h4 {
 		font-size: 1.8vw;
 		line-height: 1.8vw;
 	}
 }@media screen and (max-width: 768px) {
-	h4, h5 {
+	h4 {
 		font-size: 2.5vw;
 		line-height: 2.5vw;
+		margin: 20px 0;
 	}
 }@media screen and (max-width: 500px) {
-	h4, h5 {
+	h4 {
 		font-size: 3.5vw;
 		line-height: 3.5vw;
 	}
 }
-h4 {
-	margin: 35px 0;
-}@media screen and (max-width: 768px) {
-	h4 {
-		margin: 20px 0;
-	}
-}
 h5 {
+	font-size: 1.2vw;
+	line-height: 1.2vw;
 	font-weight: 400;
 	margin: 15px 0 5px;
-	line-height: 20px;
+}@media screen and (max-width: 1024px) {
+	h5 {
+		font-size: 1.85vw;
+		line-height: 1.85vw;
+	}
+}@media screen and (max-width: 768px) {
+	h5 {
+		font-size: 2.85vw;
+		line-height: 2.85vw;
+	}
+}@media screen and (max-width: 600px) {
+	h5 {
+		font-size: 3.5vw;
+		line-height: 3.5vw;
+	}
+}@media screen and (max-width: 500px) {
+	h5 {
+		font-size: 4.25vw;
+		line-height: 4.25vw;
+	}
 }
 p, a, form input, form textarea, form button {
 	font-family: "Poppins", sans-serif;
