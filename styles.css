@@ -138,7 +138,7 @@ h5 {
 		line-height: 4.25vw;
 	}
 }
-p, a, form input, form textarea, form button {
+p, a, li, form input, form textarea, form button {
 	font-family: "Poppins", sans-serif;
 }
 p.title {
@@ -485,10 +485,13 @@ section {
 	justify-content: space-around;
 	height: 100%;
 }*/
-.resumeBox p {
+.resumeBox p, .resumeBox li {
 	font-size: 14px;
 	line-height: 22px;
 	padding-left: 10px;
+}
+.resumeBox li {
+	list-style-type: disc;
 }
 .resumeBox p.title, .resumeBox p.date {
 	margin: 0;
