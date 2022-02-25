@@ -94,6 +94,19 @@ $(window).scroll(function() {
 	}
 });
 
+$('#menu a').click(function() {
+	const target = $(this).attr('data-panel')
+	const sections = [];
+	$('.sectionBox').find('section').each(function() {
+		sections.push($(this))
+	});
+
+	sections.forEach(element => {
+		if(target == element.attr('data-panel')) {
+			$(element)[0].scrollIntoView({behavior: 'smooth'})
+		}
+	});
+})
 
 // side menu function
 $('nav .rightBox svg').click(function() {
