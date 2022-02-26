@@ -161,3 +161,18 @@ $('.treadmillFactory').mouseover(function() {
 		'background-blend-mode': 'darken'
 	});
 });
+
+$('#section5').mouseover(function() {
+	if($('#section5 .innerBox:not(:hover)')) {
+		console.log('mouse is out')
+	} else if($('#section5 .innerBox div:hover')) {
+		console.log('mouse is in')
+	}
+});
+
+
+// function section5() {
+// 	if($('#section5 .innerBox div:not(:hover)')) {
+// 		console.log('mouse is out')
+// 	}
+// }
