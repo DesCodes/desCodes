@@ -170,7 +170,6 @@ $('#section5').mouseover(function() {
 	}
 });
 
-
 // function section5() {
 // 	if($('#section5 .innerBox div:not(:hover)')) {
 // 		console.log('mouse is out')
